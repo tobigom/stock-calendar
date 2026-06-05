@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📈 주식 일정 통합 캘린더</title>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+        #calendar-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h2 {
+            text-align: center;
+            color: #222;
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-size: 1.6em;
+        }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 20px;
+            margin-bottom: 16px;
+            font-size: 0.85em;
+            color: #555;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .legend-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+        /* ============================================================
+           이벤트 타입별 색상 (기본 타입)
+           ============================================================ */
+        .fc-event-korea { background-color: #f39c12 !important; border-color: #f39c12 !important; }
+        .fc-event-global { background-color: #3498db !important; border-color: #3498db !important; }
+        .fc-event-ipo { background-color: #e74c3c !important; border-color: #e74c3c !important; }
+        .fc-event-macro { background-color: #3498db !important; border-color: #3498db !important; }
+        .fc-event-earnings { background-color: #9b59b6 !important; border-color: #9b59b6 !important; }
+        .fc-event-dividend { background-color: #2ecc71 !important; border-color: #2ecc71 !important; }
+        .fc-event-telegram { background-color: #e67e22 !important; border-color: #e67e22 !important; }
+        .fc-event-futures_options { background-color: #2c3e50 !important; border-color: #2c3e50 !important; }
+        /* ============================================================
+           정성 분석(Qualitative) 카테고리별 세분화 색상
+           ============================================================ */
+        .fc-event-qualitative-인사\/방문 { background-color: #e67e22 !important; border-color: #e67e22 !important; }
+        .fc-event-qualitative-통화정책 { background-color: #c0392b !important; border-color: #c0392b !important; }
+        .fc-event-qualitative-정부정책 { background-color: #8e44ad !important; border-color: #8e44ad !important; }
+        .fc-event-qualitative-국제관계 { background-color: #2c3e50 !important; border-color: #2c3e50 !important; }
+        .fc-event-qualitative-정치 { background-color: #7f8c8d !important; border-color: #7f8c8d !important; }
+        .fc-event-qualitative-컨퍼런스 { background-color: #16a085 !important; border-color: #16a085 !important; }
+        .fc-event-qualitative-경제지표 { background-color: #2980b9 !important; border-color: #2980b9 !important; }
+        /* ============================================================
+           툴팁 스타일 (FullCalendar 기본 툴팁 + 커스텀)
+           ============================================================ */
+        .fc-event {
+            cursor: pointer;
+        }
+        .fc-event[title]:hover::after {
+            content: attr(title);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(0,0,0,0.85);
+            color: #fff;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+            white-space: nowrap;
+            z-index: 1000;
+            pointer-events: none;
+            margin-bottom: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="calendar-container">
+        <h2>📈 주식 일정 통합 캘린더</h2>
+        <div class="legend">
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#f39c12;"></span> 국내
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#3498db;"></span> 해외
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#e74c3c;"></span> IPO
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#9b59b6;"></span> 실적
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#2ecc71;"></span> 배당
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#e67e22;"></span> 인사/방문
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#c0392b;"></span> 통화정책
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#8e44ad;"></span> 정부정책
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#16a085;"></span> 컨퍼런스
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#2980b9;"></span> 경제지표
+            </span>
+            <span class="legend-item">
+                <span class="legend-dot" style="background:#2c3e50;"></span> 선물옵션
+            </span>
+        </div>
+        <div id='calendar'></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var rawEvents = [{"date": "2026-05-26", "title": "공모주 청약: 피스피스스튜디오", "type": "ipo"}, {"date": "2026-06-01", "title": "연준 파월 의장 반기 통화정책 보고 (의회 증언) (예상)", "type": "qualitative", "category": "통화정책", "color": "#c0392b", "description": "파월 연준 의장의 상/하원 통화정책 반기 보고. 금리 전망 시사.", "impact_reason": "매년 2월/6월 의회 증언에서 금리 방향성 시사 시 전 세계 증시 출렁", "source": "qualitative_knowledge_base"}, {"date": "2026-06-01", "title": "WWDC (애플 세계 개발자 컨퍼런스) (예상)", "type": "qualitative", "category": "컨퍼런스", "color": "#16a085", "description": "애플 WWDC에서 신규 OS, AI 전략 발표", "impact_reason": "AI 전략 발표 시 국내 애플 부품주/IT주 영향", "source": "qualitative_knowledge_base"}, {"date": "2026-06-05", "title": "🟡 [EUR] GDP", "type": "macro", "currency": "EUR", "importance": 2, "source": "investing.com"}, {"date": "2026-06-05", "title": "🔴 [USD] Average Hourly Earnings", "type": "macro", "currency": "USD", "importance": 3, "source": "investing.com"}, {"date": "2026-06-05", "title": "🔴 [USD] Nonfarm Payrolls", "type": "macro", "currency": "USD", "importance": 3, "source": "investing.com"}, {"date": "2026-06-05", "title": "🔴 [USD] Unemployment Rate", "type": "macro", "currency": "USD", "importance": 3, "source": "investing.com"}, {"date": "2026-06-05", "title": "🟡 [CAD] Unemployment Rate", "type": "macro", "currency": "CAD", "importance": 2, "source": "investing.com"}, {"date": "2026-06-05", "title": "🟡 [CAD] Employment Change", "type": "macro", "currency": "CAD", "importance": 2, "source": "investing.com"}, {"date": "2026-06-05", "title": "🟡 [CAD] Ivey PMI", "type": "macro", "currency": "CAD", "importance": 2, "source": "investing.com"}, {"date": "2026-06-05", "title": "🟡 [USD] Consumer Credit", "type": "macro", "currency": "USD", "importance": 2, "source": "investing.com"}, {"date": "2026-06-08", "title": "공모주 상장: 피스피스스튜디오", "type": "ipo"}, {"date": "2026-06-09", "title": "공모주 청약: 메리츠제2호스팩", "type": "ipo"}, {"date": "2026-06-10", "title": "미국 5월 CPI 발표", "type": "qualitative", "category": "경제지표", "color": "#2980b9", "description": "5월 소비자물가지수(CPI) 발표. 연준 금리 결정에 직접적 영향.", "impact_reason": "CPI 발표일마다 코스피/코스닥 변동성 2~3배 확대", "source": "qualitative_knowledge_base"}, {"date": "2026-06-11", "title": "📊 선물옵션 동시만기일 (6월)", "type": "futures_options", "category": "파생상품", "color": "#2c3e50", "description": "2026년 6월 선물옵션 동시만기일. 만기일 괴리율 축소를 위한 프로그램 매매로 증시 변동성 확대.", "impact_reason": "만기일마다 코스피/코스닥 장 막판 1~3% 변동. 프로그램 매매(차익거래) 대량 발생.", "source": "qualitative_knowledge_base"}, {"date": "2026-06-11", "title": "ECB 통화정책회의 (금리 결정)", "type": "qualitative", "category": "통화정책", "color": "#c0392b", "description": "유럽중앙은행(ECB) 금리 결정 및 통화정책 방향", "impact_reason": "ECB 금리 결정 시 유로/달러 환율 변동 → 국내 증시 영향", "source": "qualitative_knowledge_base"}, {"date": "2026-06-17", "title": "공모주 청약: 스트라드비젼", "type": "ipo"}, {"date": "2026-06-17", "title": "미국 5월 소매판매(Retail Sales) 발표", "type": "qualitative", "category": "경제지표", "color": "#2980b9", "description": "5월 소매판매 데이터. 소비 경기 판단 핵심 지표.", "impact_reason": "소비 둔화 신호 시 코스피 하방 압력", "source": "qualitative_knowledge_base"}, {"date": "2026-06-18", "title": "공모주 청약: 져스텍", "type": "ipo"}, {"date": "2026-06-18", "title": "미국 FOMC 금리 결정 (6월)", "type": "qualitative", "category": "통화정책", "color": "#c0392b", "description": "연준 FOMC 6월 회의. 금리 결정 및 점도표, 경제 전망 업데이트.", "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동. 점도표에 따른 금리 전망이 시장 방향 결정", "source": "qualitative_knowledge_base"}, {"date": "2026-06-19", "title": "공모주 청약: 빅웨이브로보틱스", "type": "ipo"}, {"date": "2026-06-22", "title": "공모주 청약: 한국제16호스팩", "type": "ipo"}, {"date": "2026-06-23", "title": "공모주 청약: 매드업", "type": "ipo"}, {"date": "2026-06-24", "title": "공모주 청약: 레몬헬스케어", "type": "ipo"}, {"date": "2026-06-25", "title": "미국 5월 PCE 물가지수 발표", "type": "qualitative", "category": "경제지표", "color": "#2980b9", "description": "연준이 선호하는 물가 지표. 근원 PCE 핵심.", "impact_reason": "PCE 발표일마다 증시 변동성 확대", "source": "qualitative_knowledge_base"}, {"date": "2026-06-29", "title": "공모주 상장(예상): 메리츠제2호스팩", "type": "ipo"}, {"date": "2026-07-01", "title": "공모주 청약: 레메디", "type": "ipo"}, {"date": "2026-07-01", "title": "한국 반도체 특별법/지원책 발표 (예상)", "type": "qualitative", "category": "정부정책", "color": "#8e44ad", "description": "K-반도체 클러스터, 세제 지원, R&D 투자 등 반도체 산업 육성 정책", "impact_reason": "2023년 반도체 지원책 발표 시 삼성전자/하이닉스 등 반도체주 급등", "source": "qualitative_knowledge_base"}, {"date": "2026-07-01", "title": "한국 6월 수출입 동향 발표", "type": "qualitative", "category": "경제지표", "color": "#2980b9", "description": "산업통상자원부 6월 수출입 실적. 반도체/자동차 수출 핵심.", "impact_reason": "수출 데이터에 따라 코스피 방향성 결정. 반도체 수출 증감률 중요", "source": "qualitative_knowledge_base"}, {"date": "2026-07-07", "title": "공모주 상장(예상): 스트라드비젼", "type": "ipo"}, {"date": "2026-07-08", "title": "공모주 상장(예상): 져스텍", "type": "ipo"}, {"date": "2026-07-09", "title": "공모주 상장(예상): 빅웨이브로보틱스", "type": "ipo"}, {"date": "2026-07-10", "title": "공모주 상장(예상): 한국제16호스팩", "type": "ipo"}, {"date": "2026-07-13", "title": "공모주 상장(예상): 매드업", "type": "ipo"}, {"date": "2026-07-14", "title": "공모주 상장(예상): 레몬헬스케어", "type": "ipo"}, {"date": "2026-07-15", "title": "한국은행 금융통화위원회 (기준금리 결정)", "type": "qualitative", "category": "통화정책", "color": "#c0392b", "description": "한은 금통위 금리 결정. 한국 경제 전망 업데이트.", "impact_reason": "금리 결정 및 한은 총재 발언에 따라 코스피/코스닥 영향", "source": "qualitative_knowledge_base"}, {"date": "2026-07-21", "title": "공모주 상장(예상): 레메디", "type": "ipo"}, {"date": "2026-07-29", "title": "미국 FOMC 금리 결정 (7월)", "type": "qualitative", "category": "통화정책", "color": "#c0392b", "description": "연준 FOMC 7월 회의. 금리 결정 및 성명서.", "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동", "source": "qualitative_knowledge_base"}, {"date": "2026-08-27", "title": "잭슨홀 미팅 (Jackson Hole Symposium)", "type": "qualitative", "category": "컨퍼런스", "color": "#16a085", "description": "캔자스시티 연은 주최 잭슨홀 경제 심포지엄. 파월 의장 기조연설.", "impact_reason": "2022년 잭슨홀에서 파월 매파 발언 후 코스피 3% 폭락. 매년 시장 방향성 결정", "source": "qualitative_knowledge_base"}, {"date": "2026-09-01", "title": "한국 정부 비상경제회의/경제정책 방향 발표 (예상)", "type": "qualitative", "category": "정부정책", "color": "#8e44ad", "description": "기획재정부 주관 경제정책 방향, 수출/내수 활성화 대책", "impact_reason": "정책 발표 시 관련 업종(반도체, 배터리, 자동차) 주가 영향", "source": "qualitative_knowledge_base"}, {"date": "2026-09-01", "title": "애플 신제품 발표 (9월 이벤트) (예상)", "type": "qualitative", "category": "컨퍼런스", "color": "#16a085", "description": "애플 아이폰 신제품 발표. 국내 부품주(카메라, 배터리, 디스플레이) 영향.", "impact_reason": "아이폰 출시 사이클에 따라 국내 부품주 실적/주가 영향", "source": "qualitative_knowledge_base"}];
+
+            var events = rawEvents.map(function(item) {
+                var cls = 'fc-event-' + (item.type || 'korea');
+                // 정성 분석 이벤트는 category별로 세분화
+                if (item.type === 'qualitative' && item.category) {
+                    cls = 'fc-event-qualitative-' + item.category;
+                }
+                return {
+                    title: item.title,
+                    start: item.date,
+                    className: cls
+                };
+            });
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                locale: 'ko',
+                height: 'auto',
+                headerToolbar: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek'
+                },
+                events: events,
+                eventDidMount: function(info) {
+                    // 모든 이벤트에 마우스 호버 시 전체 제목 표시 (툴팁)
+                    info.el.title = info.event.title;
+                }
+            });
+
+            calendar.render();
+        });
+    </script>
+</body>
+</html>

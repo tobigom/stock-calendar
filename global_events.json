@@ -1,0 +1,74 @@
+[
+  {
+    "date": "2026-06-05",
+    "title": "🟡 [EUR] GDP",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🟡 [EUR] GDP",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🔴 [USD] Average Hourly Earnings",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🔴 [USD] Nonfarm Payrolls",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🔴 [USD] Unemployment Rate",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🟡 [CAD] Unemployment Rate",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🟡 [CAD] Employment Change",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🟡 [CAD] Ivey PMI",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-05",
+    "title": "🟡 [USD] Consumer Credit",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  }
+]
