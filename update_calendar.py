@@ -12,6 +12,7 @@
 import json
 import os
 import sys
+from datetime import datetime
 
 # ============================================================
 # 설정
@@ -97,6 +98,7 @@ def generate_html(events: list) -> str:
     - 그 외 타입(ipo, macro, earnings, dividend 등)도 각각 색상 유지
     """
     events_json = json.dumps(events, ensure_ascii=False)
+    now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     return f"""<!DOCTYPE html>
 <html lang="ko">
@@ -199,6 +201,9 @@ def generate_html(events: list) -> str:
 
     <div id="calendar-container">
         <h2>📈 주식 일정 통합 캘린더</h2>
+        <div style="text-align:center; color:#888; font-size:0.85em; margin-bottom:12px;">
+            최종 갱신: {now}
+        </div>
         <div class="legend">
             <span class="legend-item">
                 <span class="legend-dot" style="background:#f39c12;"></span> 국내
