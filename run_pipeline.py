@@ -108,8 +108,8 @@ def run_step(step_name: str, script_name: str, required: bool = False) -> bool:
 
     start_time = time.time()
 
-    # 텔레그램 단계는 30초 타임아웃 (로그인 문제 시 빠르게 스킵)
-    timeout_sec = 30 if "telegram" in script_name else 120
+    # 텔레그램 단계는 120초 타임아웃 (FloodWait 대비)
+    timeout_sec = 120 if "telegram" in script_name else 120
 
     try:
         # 텔레그램 단계: 타임아웃 시 프로세스 강제 종료를 위해 Popen 사용
