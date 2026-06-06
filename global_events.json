@@ -1,74 +1,506 @@
 [
   {
-    "date": "2026-06-05",
-    "title": "🟡 [EUR] GDP",
+    "date": "2026-06-07",
+    "title": "🔴 [USD] FOMC Member Barr Speaks",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [JPY] Bank Lending y/y",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [JPY] Current Account",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [JPY] Final GDP Price Index y/y",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [JPY] Final GDP q/q",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [JPY] Economy Watchers Sentiment",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [EUR] German Factory Orders m/m",
     "type": "macro",
     "currency": "EUR",
-    "importance": 2,
-    "source": "investing.com"
+    "importance": 4,
+    "source": "forexfactory.com"
   },
   {
-    "date": "2026-06-05",
-    "title": "🟡 [EUR] GDP",
+    "date": "2026-06-08",
+    "title": "[CHF] SECO Consumer Climate",
+    "type": "macro",
+    "currency": "CHF",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-08",
+    "title": "🟡 [EUR] Sentix Investor Confidence",
     "type": "macro",
     "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "[NZD] Manufacturing Sales q/q",
+    "type": "macro",
+    "currency": "NZD",
     "importance": 2,
-    "source": "investing.com"
+    "source": "forexfactory.com"
   },
   {
-    "date": "2026-06-05",
-    "title": "🔴 [USD] Average Hourly Earnings",
+    "date": "2026-06-09",
+    "title": "🟡 [GBP] BRC Retail Sales Monitor y/y",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🟡 [JPY] M2 Money Stock y/y",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "[AUD] Westpac Consumer Sentiment",
+    "type": "macro",
+    "currency": "AUD",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "[AUD] NAB Business Confidence",
+    "type": "macro",
+    "currency": "AUD",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🔴 [CNY] Trade Balance",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🔴 [CNY] USD-Denominated Trade Balance",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🟡 [EUR] German Industrial Production m/m",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🟡 [EUR] German Trade Balance",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🟡 [JPY] Prelim Machine Tool Orders y/y",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🔴 [USD] NFIB Small Business Index",
     "type": "macro",
     "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
+    "importance": 6,
+    "source": "forexfactory.com"
   },
   {
-    "date": "2026-06-05",
-    "title": "🔴 [USD] Nonfarm Payrolls",
+    "date": "2026-06-09",
+    "title": "🔴 [USD] ADP Weekly Employment Change",
     "type": "macro",
     "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
+    "importance": 6,
+    "source": "forexfactory.com"
   },
   {
-    "date": "2026-06-05",
-    "title": "🔴 [USD] Unemployment Rate",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-05",
-    "title": "🟡 [CAD] Unemployment Rate",
+    "date": "2026-06-09",
+    "title": "[CAD] Trade Balance",
     "type": "macro",
     "currency": "CAD",
     "importance": 2,
-    "source": "investing.com"
+    "source": "forexfactory.com"
   },
   {
-    "date": "2026-06-05",
-    "title": "🟡 [CAD] Employment Change",
-    "type": "macro",
-    "currency": "CAD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-05",
-    "title": "🟡 [CAD] Ivey PMI",
-    "type": "macro",
-    "currency": "CAD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-05",
-    "title": "🟡 [USD] Consumer Credit",
+    "date": "2026-06-09",
+    "title": "🔴 [USD] Trade Balance",
     "type": "macro",
     "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🔴 [USD] Existing Home Sales",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-09",
+    "title": "🔴 [USD] Final Wholesale Inventories m/m",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🔴 [USD] API Weekly Statistical Bulletin",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🟡 [JPY] PPI y/y",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🔴 [CNY] CPI y/y",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🔴 [CNY] PPI y/y",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🟡 [JPY] 30-y Bond Auction",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🟡 [EUR] Italian Industrial Production m/m",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🟡 [EUR] German 10-y Bond Auction",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-10",
+    "title": "🔴 [USD] Crude Oil Inventories",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [USD] 10-y Bond Auction",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [USD] Federal Budget Balance",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🟡 [GBP] RICS House Price Balance",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🟡 [JPY] BSI Manufacturing Index",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "[AUD] MI Inflation Expectations",
+    "type": "macro",
+    "currency": "AUD",
     "importance": 2,
-    "source": "investing.com"
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🟡 [EUR] German WPI m/m",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [CNY] M2 Money Supply y/y",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [CNY] New Loans",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🟡 [EUR] Eurogroup Meetings",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "[CAD] Building Permits m/m",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [USD] Unemployment Claims",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 9,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [USD] Natural Gas Storage",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🔴 [USD] 30-y Bond Auction",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 6,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "[NZD] BusinessNZ Manufacturing Index",
+    "type": "macro",
+    "currency": "NZD",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "[NZD] Visitor Arrivals m/m",
+    "type": "macro",
+    "currency": "NZD",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [JPY] Revised Industrial Production m/m",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [EUR] German Final CPI m/m",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] Construction Output m/m",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] Goods Trade Balance",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] Index of Services 3m/3m",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] Industrial Production m/m",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] Manufacturing Production m/m",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [EUR] French Final CPI m/m",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] Consumer Inflation Expectations",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [EUR] ECOFIN Meetings",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "[CAD] Capacity Utilization Rate",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [GBP] CB Leading Index m/m",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 4,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🔴 [USD] Prelim UoM Consumer Sentiment",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 9,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🔴 [USD] Prelim UoM Inflation Expectations",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 9,
+    "source": "forexfactory.com"
+  },
+  {
+    "date": "2026-06-12",
+    "title": "🟡 [EUR] German Buba President Nagel Speaks",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 4,
+    "source": "forexfactory.com"
   }
 ]

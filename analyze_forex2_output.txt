@@ -1,0 +1,182 @@
+Found 87 calendar rows
+
+--- Row 1 ---
+Date: N/A
+Currency: N/A
+Event: N/A
+Impact HTML: N/A
+All span/i: 0, classes: []
+Impact spans: 0
+Any impact elements: 0
+
+--- Row 2 ---
+Date: SunJun 7
+Currency: USD
+Event: FOMC Member Barr Speaks
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 3 ---
+Date: N/A
+Currency: All
+Event: OPEC-JMMC Meetings
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-ora"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-ora']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 4 ---
+Date: N/A
+Currency: All
+Event: OPEC Meetings
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-ora"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-ora']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 5 ---
+Date: N/A
+Currency: N/A
+Event: N/A
+Impact HTML: N/A
+All span/i: 0, classes: []
+Impact spans: 0
+Any impact elements: 0
+
+--- Row 6 ---
+Date: MonJun 8
+Currency: AUD
+Event: Bank Holiday
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-gra"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-gra']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 7 ---
+Date: N/A
+Currency: JPY
+Event: Bank Lending y/y
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 8 ---
+Date: N/A
+Currency: JPY
+Event: Current Account
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 9 ---
+Date: N/A
+Currency: JPY
+Event: Final GDP Price Index y/y
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 10 ---
+Date: N/A
+Currency: JPY
+Event: Final GDP q/q
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 11 ---
+Date: N/A
+Currency: JPY
+Event: Economy Watchers Sentiment
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 12 ---
+Date: N/A
+Currency: EUR
+Event: German Factory Orders m/m
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 13 ---
+Date: N/A
+Currency: CHF
+Event: SECO Consumer Climate
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 14 ---
+Date: N/A
+Currency: EUR
+Event: Sentix Investor Confidence
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 15 ---
+Date: N/A
+Currency: N/A
+Event: N/A
+Impact HTML: N/A
+All span/i: 0, classes: []
+Impact spans: 0
+Any impact elements: 0
+
+--- Row 16 ---
+Date: TueJun 9
+Currency: NZD
+Event: Manufacturing Sales q/q
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 17 ---
+Date: N/A
+Currency: GBP
+Event: BRC Retail Sales Monitor y/y
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 18 ---
+Date: N/A
+Currency: JPY
+Event: M2 Money Stock y/y
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 19 ---
+Date: N/A
+Currency: AUD
+Event: Westpac Consumer Sentiment
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+
+--- Row 20 ---
+Date: N/A
+Currency: AUD
+Event: NAB Business Confidence
+Impact HTML: <td class="calendar__cell calendar__impact"><span class="icon icon--ff-impact-yel"></span></td>
+All span/i: 1, classes: [['icon', 'icon--ff-impact-yel']]
+Impact spans: 1
+Any impact elements: 0
+

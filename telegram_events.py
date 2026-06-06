@@ -41,9 +41,17 @@ PHONE_NUMBER = "821087555301"
 # ※ 단, private/초대 전용 채널은 접근 불가
 # ============================================================
 TARGET_CHANNELS = [
-    "value_investing_lab",
-    "giant_mkt",
-    # 필요시 추가
+    # 한국 주식/경제 채널 (실제 존재 확인 완료)
+    "realtime_stock_news",      # 실시간 주식 뉴스 (37,211명)
+    "stock_messenger",          # 주식 텔레그램 채널 (25,508명)
+    "moneythemestock",          # 머니테마 주식 (18,372명)
+    "FastStockNewsUSA",         # 미국주식 속보 (38,744명)
+    "kwusa",                    # 키움증권 미국주식 (36,797명)
+    "itechkorea",               # 미국주식과 기술이야기 (13,217명)
+    "yeonsour",                 # 연서의 해외주식 (11,594명)
+    "hana_us_stock",            # 하나은행 미국주식 (8,818명)
+    "stock_news",               # Stock News (10,048명)
+    "us_stock_info",            # 미국주식
 ]
 
 # ============================================================
@@ -96,6 +104,11 @@ logger = logging.getLogger(__name__)
 def extract_date_from_text(text: str):
     """
     메시지 본문에서 YYYY-MM-DD 형식의 날짜를 추출합니다.
+    - "2026-06-12", "2026.06.12", "2026/06/12" 형식 우선
+    - "6월 12일", "6월12일" 형식 (연도 없으면 현재 연도)
+    - "6/12" 미국식 형식
+    - "12일"만 있는 경우 (이번달로 간주)
+    - "내일", "모레" 같은 상대적 날짜
     """
     # YYYY-MM-DD, YYYY.MM.DD, YYYY/MM/DD
     m = re.search(r"(\d{4})[-./](\d{1,2})[-./](\d{1,2})", text)
@@ -103,20 +116,68 @@ def extract_date_from_text(text: str):
         year, month, day = int(m.group(1)), int(m.group(2)), int(m.group(3))
         return f"{year:04d}-{month:02d}-{day:02d}"
 
-    # MM월 DD일 (같은 해)
+    # MM월 DD일 (같은 해) - "6월 12일", "6월12일"
     m = re.search(r"(\d{1,2})월\s*(\d{1,2})일", text)
     if m:
         now = datetime.now()
         month, day = int(m.group(1)), int(m.group(2))
-        return f"{now.year:04d}-{month:02d}-{day:02d}"
+        # 월이 현재 월보다 작으면 다음 해로 간주 (ex: 12월에 "1월" 언급)
+        if month < now.month:
+            year = now.year + 1
+        else:
+            year = now.year
+        return f"{year:04d}-{month:02d}-{day:02d}"
 
-    # MM/DD (같은 해, 미국식)
-    m = re.search(r"(\d{1,2})/(\d{1,2})", text)
+    # MM/DD (같은 해, 미국식) - 단, 날짜 범위 내에서만
+    m = re.search(r"(?<!\d)(\d{1,2})/(\d{1,2})(?!\d)", text)
     if m:
         month, day = int(m.group(1)), int(m.group(2))
         if 1 <= month <= 12 and 1 <= day <= 31:
             now = datetime.now()
-            return f"{now.year:04d}-{month:02d}-{day:02d}"
+            # 월이 현재 월보다 작으면 다음 해
+            if month < now.month:
+                year = now.year + 1
+            else:
+                year = now.year
+            return f"{year:04d}-{month:02d}-{day:02d}"
+
+    # "DD일"만 있는 경우 (이번달로 간주, 단 1~31 범위)
+    m = re.search(r"(?<!\d)(\d{1,2})일(?!\d)", text)
+    if m:
+        day = int(m.group(1))
+        if 1 <= day <= 31:
+            now = datetime.now()
+            # 오늘보다 이전 날짜면 다음달로 간주
+            if day < now.day:
+                next_month = now.month + 1
+                year = now.year
+                if next_month > 12:
+                    next_month = 1
+                    year += 1
+                return f"{year:04d}-{next_month:02d}-{day:02d}"
+            else:
+                return f"{now.year:04d}-{now.month:02d}-{day:02d}"
+
+    # "내일", "모레" 같은 상대적 날짜
+    now = datetime.now()
+    if "내일" in text or "다음날" in text:
+        tomorrow = now + timedelta(days=1)
+        return tomorrow.strftime("%Y-%m-%d")
+    if "모레" in text:
+        day_after = now + timedelta(days=2)
+        return day_after.strftime("%Y-%m-%d")
+    if "이번주" in text or "금주" in text:
+        # 이번주 금요일 찾기
+        days_ahead = 4 - now.weekday()  # 금요일=4
+        if days_ahead <= 0:
+            days_ahead += 7
+        friday = now + timedelta(days=days_ahead)
+        return friday.strftime("%Y-%m-%d")
+    if "다음주" in text:
+        # 다음주 월요일
+        days_ahead = 7 - now.weekday()
+        next_monday = now + timedelta(days=days_ahead)
+        return next_monday.strftime("%Y-%m-%d")
 
     return None
 
@@ -208,7 +269,7 @@ async def collect_telegram_events() -> list:
                 # 최근 메시지 순회 (최대 500개)
                 msg_count = 0
                 async for message in client.iter_messages(
-                    entity, limit=500, offset_date=datetime.now(timezone.utc)
+                    entity, limit=500
                 ):
                     # 48시간 이전 메시지는 스킵
                     if message.date.replace(tzinfo=timezone.utc) < cutoff_time:
@@ -321,14 +382,10 @@ def main():
         # 빈 배열이라도 저장 (파일 없음 방지)
         save_events([])
 
-    # 결과 출력
-    print()
-    print("-" * 55)
-    print(f"  총 {len(events)}건의 일정이 수집되었습니다.")
+    # 결과 출력 (로깅으로만 처리, cp949 인코딩 문제 회피)
+    logger.info(f"총 {len(events)}건의 일정이 수집되었습니다.")
     for ev in events:
-        print(f"    [{ev['date']}] {ev['title']}")
-    print("=" * 55)
-    print()
+        logger.info(f"  [{ev['date']}] {ev['title']}")
 
 
 if __name__ == "__main__":
