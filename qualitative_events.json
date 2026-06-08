@@ -1,25 +1,5 @@
 [
   {
-    "date": "2026-06-01",
-    "title": "연준 파월 의장 반기 통화정책 보고 (의회 증언) (예상)",
-    "type": "qualitative",
-    "category": "통화정책",
-    "color": "#c0392b",
-    "description": "파월 연준 의장의 상/하원 통화정책 반기 보고. 금리 전망 시사.",
-    "impact_reason": "매년 2월/6월 의회 증언에서 금리 방향성 시사 시 전 세계 증시 출렁",
-    "source": "qualitative_knowledge_base"
-  },
-  {
-    "date": "2026-06-01",
-    "title": "WWDC (애플 세계 개발자 컨퍼런스) (예상)",
-    "type": "qualitative",
-    "category": "컨퍼런스",
-    "color": "#16a085",
-    "description": "애플 WWDC에서 신규 OS, AI 전략 발표",
-    "impact_reason": "AI 전략 발표 시 국내 애플 부품주/IT주 영향",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-06-10",
     "title": "미국 5월 CPI 발표",
     "type": "qualitative",

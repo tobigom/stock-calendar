@@ -57,14 +57,6 @@
   },
   {
     "date": "2026-06-08",
-    "title": "[CHF] SECO Consumer Climate",
-    "type": "macro",
-    "currency": "CHF",
-    "importance": 2,
-    "source": "forexfactory.com"
-  },
-  {
-    "date": "2026-06-08",
     "title": "🟡 [EUR] Sentix Investor Confidence",
     "type": "macro",
     "currency": "EUR",
@@ -301,14 +293,6 @@
     "type": "macro",
     "currency": "AUD",
     "importance": 2,
-    "source": "forexfactory.com"
-  },
-  {
-    "date": "2026-06-11",
-    "title": "🟡 [EUR] German WPI m/m",
-    "type": "macro",
-    "currency": "EUR",
-    "importance": 4,
     "source": "forexfactory.com"
   },
   {
