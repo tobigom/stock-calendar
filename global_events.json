@@ -105,7 +105,7 @@
   },
   {
     "date": "2026-06-09",
-    "title": "🔴 [CNY] Trade Balance",
+    "title": "🔴 [CNY] USD-Denominated Trade Balance",
     "type": "macro",
     "currency": "CNY",
     "importance": 6,
@@ -113,7 +113,7 @@
   },
   {
     "date": "2026-06-09",
-    "title": "🔴 [CNY] USD-Denominated Trade Balance",
+    "title": "🔴 [CNY] Trade Balance",
     "type": "macro",
     "currency": "CNY",
     "importance": 6,
@@ -445,14 +445,6 @@
     "type": "macro",
     "currency": "EUR",
     "importance": 4,
-    "source": "forexfactory.com"
-  },
-  {
-    "date": "2026-06-12",
-    "title": "[CAD] Capacity Utilization Rate",
-    "type": "macro",
-    "currency": "CAD",
-    "importance": 2,
     "source": "forexfactory.com"
   },
   {
