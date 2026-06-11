@@ -128,5 +128,15 @@
     "description": "애플 아이폰 신제품 발표. 국내 부품주(카메라, 배터리, 디스플레이) 영향.",
     "impact_reason": "아이폰 출시 사이클에 따라 국내 부품주 실적/주가 영향",
     "source": "qualitative_knowledge_base"
+  },
+  {
+    "date": "2026-09-10",
+    "title": "📊 선물옵션 동시만기일 (9월)",
+    "type": "futures_options",
+    "category": "파생상품",
+    "color": "#2c3e50",
+    "description": "2026년 9월 선물옵션 동시만기일. 만기일 괴리율 축소를 위한 프로그램 매매로 증시 변동성 확대.",
+    "impact_reason": "만기일마다 코스피/코스닥 장 막판 1~3% 변동. 프로그램 매매(차익거래) 대량 발생.",
+    "source": "qualitative_knowledge_base"
   }
 ]

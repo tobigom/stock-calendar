@@ -1,74 +1,58 @@
 [
   {
-    "date": "2026-06-10",
-    "title": "🟡 [CNY] CPI",
+    "date": "2026-06-11",
+    "title": "🔴 [EUR] ECB Interest Rate Decision",
     "type": "macro",
-    "currency": "CNY",
+    "currency": "EUR",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🟡 [EUR] ECB Monetary Policy Statement",
+    "type": "macro",
+    "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-10",
-    "title": "🟡 [CNY] CPI",
+    "date": "2026-06-11",
+    "title": "🟡 [EUR] ECB Marginal Lending Facility",
     "type": "macro",
-    "currency": "CNY",
+    "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-10",
-    "title": "🔴 [USD] CPI",
+    "date": "2026-06-11",
+    "title": "🔴 [USD] PPI",
     "type": "macro",
     "currency": "USD",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-10",
-    "title": "🔴 [USD] Core CPI",
+    "date": "2026-06-11",
+    "title": "🔴 [USD] Initial Jobless Claims",
     "type": "macro",
     "currency": "USD",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-10",
-    "title": "🔴 [USD] CPI",
+    "date": "2026-06-11",
+    "title": "🟡 [USD] Continuing Jobless Claims",
     "type": "macro",
     "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-11",
+    "title": "🔴 [EUR] ECB Press Conference",
+    "type": "macro",
+    "currency": "EUR",
     "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-10",
-    "title": "🟡 [USD] Core CPI",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-10",
-    "title": "🔴 [CAD] BoC Interest Rate Decision",
-    "type": "macro",
-    "currency": "CAD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-10",
-    "title": "🟡 [USD] Federal Budget Balance",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-10",
-    "title": "🟡 [JPY] BSI Large Manufacturing Conditions",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
     "source": "investing.com"
   }
 ]
