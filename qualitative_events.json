@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-06-10",
-    "title": "미국 5월 CPI 발표",
-    "type": "qualitative",
-    "category": "경제지표",
-    "color": "#2980b9",
-    "description": "5월 소비자물가지수(CPI) 발표. 연준 금리 결정에 직접적 영향.",
-    "impact_reason": "CPI 발표일마다 코스피/코스닥 변동성 2~3배 확대",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-06-11",
     "title": "📊 선물옵션 동시만기일 (6월)",
     "type": "futures_options",

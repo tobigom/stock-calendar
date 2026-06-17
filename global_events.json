@@ -1,122 +1,130 @@
 [
   {
-    "date": "2026-06-16",
-    "title": "🟡 [CNY] Industrial Production",
+    "date": "2026-06-17",
+    "title": "🔴 [GBP] CPI",
     "type": "macro",
-    "currency": "CNY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🟡 [CNY] Chinese Industrial Production YTD ",
-    "type": "macro",
-    "currency": "CNY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🟡 [CNY] Chinese Unemployment Rate",
-    "type": "macro",
-    "currency": "CNY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🟡 [JPY] BoJ Monetary Policy Statement",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🔴 [JPY] BoJ Interest Rate Decision",
-    "type": "macro",
-    "currency": "JPY",
+    "currency": "GBP",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🔴 [AUD] RBA Interest Rate Decision",
+    "date": "2026-06-17",
+    "title": "🟡 [GBP] CPI",
     "type": "macro",
-    "currency": "AUD",
+    "currency": "GBP",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🔴 [EUR] CPI",
+    "type": "macro",
+    "currency": "EUR",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🟡 [JPY] BoJ Press Conference",
+    "date": "2026-06-17",
+    "title": "🟡 [EUR] Core CPI",
     "type": "macro",
-    "currency": "JPY",
+    "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🟡 [USD] ADP Employment Change Weekly",
+    "date": "2026-06-17",
+    "title": "🟡 [EUR] CPI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🔴 [USD] Retail Sales",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🔴 [USD] Core Retail Sales",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🟡 [CAD] New Housing Price Index",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🔴 [USD] Fed Interest Rate Decision",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🔴 [USD] FOMC Statement",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🔴 [USD] FOMC Economic Projections",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-17",
+    "title": "🟡 [USD] Interest Rate Projection - Current",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🟡 [USD] Import Price Index",
+    "date": "2026-06-17",
+    "title": "🟡 [USD] Interest Rate Projection - 2nd Yr",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🟡 [USD] Export Price Index",
+    "date": "2026-06-17",
+    "title": "🟡 [USD] Interest Rate Projection - Longer",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🟡 [USD] Housing Starts",
+    "date": "2026-06-17",
+    "title": "🟡 [USD] Interest Rate Projection - 1st Yr",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-16",
-    "title": "🟡 [USD] Housing Starts",
+    "date": "2026-06-17",
+    "title": "🔴 [USD] FOMC Press Conference",
     "type": "macro",
     "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🟡 [JPY] Trade Balance",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🟡 [JPY] Exports",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-16",
-    "title": "🟡 [JPY] Adjusted Trade Balance",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
+    "importance": 3,
     "source": "investing.com"
   }
 ]
