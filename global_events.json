@@ -1,121 +1,33 @@
 [
   {
-    "date": "2026-06-18",
-    "title": "🟡 [GBP] Unemployment Rate",
+    "date": "2026-06-22",
+    "title": "🟡 [CNY] PBoC Loan Prime Rate",
     "type": "macro",
-    "currency": "GBP",
+    "currency": "CNY",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-18",
-    "title": "🟡 [GBP] Employment Change 3M/3M",
+    "date": "2026-06-22",
+    "title": "🟡 [CAD] Core CPI",
     "type": "macro",
-    "currency": "GBP",
+    "currency": "CAD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-18",
-    "title": "🔴 [CHF] SNB Interest Rate Decision",
+    "date": "2026-06-22",
+    "title": "🟡 [CAD] Core CPI",
     "type": "macro",
-    "currency": "CHF",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🔴 [GBP] BoE Interest Rate Decision",
-    "type": "macro",
-    "currency": "GBP",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [GBP] BoE MPC vote unchanged",
-    "type": "macro",
-    "currency": "GBP",
+    "currency": "CAD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-18",
-    "title": "🟡 [GBP] BoE MPC vote cut",
+    "date": "2026-06-22",
+    "title": "🟡 [CAD] CPI",
     "type": "macro",
-    "currency": "GBP",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [GBP] BoE MPC vote hike",
-    "type": "macro",
-    "currency": "GBP",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [GBP] BoE MPC Meeting Minutes",
-    "type": "macro",
-    "currency": "GBP",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🔴 [USD] Philadelphia Fed Manufacturing Index",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🔴 [USD] Initial Jobless Claims",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [USD] Philly Fed Employment",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [USD] Continuing Jobless Claims",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [USD] Fed's Balance Sheet",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [JPY] National Core CPI",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-18",
-    "title": "🟡 [JPY] National CPI",
-    "type": "macro",
-    "currency": "JPY",
+    "currency": "CAD",
     "importance": 2,
     "source": "investing.com"
   }
