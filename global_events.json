@@ -1,33 +1,129 @@
 [
   {
-    "date": "2026-06-22",
-    "title": "🟡 [CNY] PBoC Loan Prime Rate",
+    "date": "2026-06-23",
+    "title": "🟡 [JPY] S&P Global Services PMI",
     "type": "macro",
-    "currency": "CNY",
+    "currency": "JPY",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-22",
-    "title": "🟡 [CAD] Core CPI",
+    "date": "2026-06-23",
+    "title": "🟡 [JPY] BoJ Core CPI",
     "type": "macro",
-    "currency": "CAD",
+    "currency": "JPY",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-22",
-    "title": "🟡 [CAD] Core CPI",
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB France Services PMI",
     "type": "macro",
-    "currency": "CAD",
+    "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-22",
-    "title": "🟡 [CAD] CPI",
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB France Manufacturing PMI",
     "type": "macro",
-    "currency": "CAD",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB Germany Manufacturing PMI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB Germany Services PMI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB Eurozone Services PMI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB Eurozone Manufacturing PMI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [EUR] HCOB Eurozone Composite PMI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [GBP] S&P Global Services PMI",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [GBP] S&P Global Manufacturing PMI",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [GBP] S&P Global Composite PMI",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [USD] ADP Employment Change Weekly",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🔴 [USD] S&P Global Services PMI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🔴 [USD] S&P Global Manufacturing PMI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-23",
+    "title": "🟡 [USD] S&P Global Composite PMI",
+    "type": "macro",
+    "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   }
