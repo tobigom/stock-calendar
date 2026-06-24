@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-06-17",
-    "title": "미국 5월 소매판매(Retail Sales) 발표",
-    "type": "qualitative",
-    "category": "경제지표",
-    "color": "#2980b9",
-    "description": "5월 소매판매 데이터. 소비 경기 판단 핵심 지표.",
-    "impact_reason": "소비 둔화 신호 시 코스피 하방 압력",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-06-18",
     "title": "미국 FOMC 금리 결정 (6월)",
     "type": "qualitative",
