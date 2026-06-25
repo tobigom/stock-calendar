@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-06-18",
-    "title": "미국 FOMC 금리 결정 (6월)",
-    "type": "qualitative",
-    "category": "통화정책",
-    "color": "#c0392b",
-    "description": "연준 FOMC 6월 회의. 금리 결정 및 점도표, 경제 전망 업데이트.",
-    "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동. 점도표에 따른 금리 전망이 시장 방향 결정",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-06-25",
     "title": "미국 5월 PCE 물가지수 발표",
     "type": "qualitative",
