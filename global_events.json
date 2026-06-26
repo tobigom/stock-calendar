@@ -1,129 +1,41 @@
 [
   {
-    "date": "2026-06-25",
-    "title": "🟡 [AUD] Full Employment Change",
-    "type": "macro",
-    "currency": "AUD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🟡 [AUD] Unemployment Rate",
-    "type": "macro",
-    "currency": "AUD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🟡 [AUD] Employment Change",
-    "type": "macro",
-    "currency": "AUD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🟡 [EUR] Spanish GDP",
-    "type": "macro",
-    "currency": "EUR",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🟡 [EUR] ECB Economic Bulletin",
-    "type": "macro",
-    "currency": "EUR",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🔴 [USD] Core PCE Price Index",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🔴 [USD] Core PCE Price Index",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🔴 [USD] GDP",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🔴 [USD] Durable Goods Orders",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🔴 [USD] Initial Jobless Claims",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🟡 [USD] Personal Spending",
+    "date": "2026-06-26",
+    "title": "🟡 [USD] Goods Trade Balance",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-25",
-    "title": "🟡 [USD] GDP Price Index",
+    "date": "2026-06-26",
+    "title": "🟡 [USD] Michigan 1-Year Inflation Expectations",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-25",
-    "title": "🟡 [USD] Core Durable Goods Orders",
+    "date": "2026-06-26",
+    "title": "🟡 [USD] Michigan Consumer Sentiment",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-25",
-    "title": "🟡 [USD] Continuing Jobless Claims",
+    "date": "2026-06-26",
+    "title": "🟡 [USD] Michigan 5-Year Inflation Expectations",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-25",
-    "title": "🟡 [USD] Fed's Balance Sheet",
+    "date": "2026-06-26",
+    "title": "🟡 [USD] Michigan Consumer Expectations",
     "type": "macro",
     "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-25",
-    "title": "🟡 [JPY] Tokyo Core CPI",
-    "type": "macro",
-    "currency": "JPY",
     "importance": 2,
     "source": "investing.com"
   }
