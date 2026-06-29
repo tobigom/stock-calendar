@@ -1,41 +1,17 @@
 [
   {
-    "date": "2026-06-26",
-    "title": "🟡 [USD] Goods Trade Balance",
+    "date": "2026-06-29",
+    "title": "🟡 [EUR] Spanish CPI",
     "type": "macro",
-    "currency": "USD",
+    "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-26",
-    "title": "🟡 [USD] Michigan 1-Year Inflation Expectations",
+    "date": "2026-06-29",
+    "title": "🟡 [JPY] Industrial Production",
     "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-26",
-    "title": "🟡 [USD] Michigan Consumer Sentiment",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-26",
-    "title": "🟡 [USD] Michigan 5-Year Inflation Expectations",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-26",
-    "title": "🟡 [USD] Michigan Consumer Expectations",
-    "type": "macro",
-    "currency": "USD",
+    "currency": "JPY",
     "importance": 2,
     "source": "investing.com"
   }
