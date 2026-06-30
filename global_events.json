@@ -1,15 +1,135 @@
 [
   {
-    "date": "2026-06-29",
-    "title": "🟡 [EUR] Spanish CPI",
+    "date": "2026-06-30",
+    "title": "🔴 [CNY] Manufacturing PMI",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [CNY] Chinese Composite PMI",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [CNY] Non-Manufacturing PMI",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🔴 [GBP] GDP",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🔴 [GBP] GDP",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [EUR] German Retail Sales",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-29",
-    "title": "🟡 [JPY] Industrial Production",
+    "date": "2026-06-30",
+    "title": "🟡 [GBP] Current Account",
+    "type": "macro",
+    "currency": "GBP",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [EUR] French CPI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [EUR] German Unemployment Rate",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [EUR] German Unemployment Change",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🔴 [EUR] German CPI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [EUR] German CPI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [CAD] GDP",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [CAD] GDP",
+    "type": "macro",
+    "currency": "CAD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🔴 [USD] Chicago PMI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🔴 [USD] CB Consumer Confidence",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-06-30",
+    "title": "🟡 [JPY] Tankan Big Manufacturing Outlook Index",
     "type": "macro",
     "currency": "JPY",
     "importance": 2,
