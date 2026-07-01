@@ -38,192 +38,264 @@ logger = logging.getLogger(__name__)
 
 QUALITATIVE_EVENTS_DB = [
     # ============================================================
-    # 1. 주요 인사 발언/방문
+    # 1. 국내 주요 인사 동향
     # ============================================================
     {
-        "date": None, "month": 3, "day": None,  # 3월 중 (GTC)
-        "title": "젠슨 황 GTC 키노트 (엔비디아 GTC 컨퍼런스)",
+        "date": None, "month": 2, "day": None,
+        "title": "삼성전자 이재용 회장 사업보고/재판 일정",
         "type": "qualitative",
-        "category": "인사/방문",
-        "description": "엔비디아 GTC(GPU Technology Conference)에서 젠슨 황 CEO 기조연설. 신제품 발표, 로드맵 공개.",
-        "impact_reason": "과거 GTC에서 차세대 GPU/반도체 발표 시 엔비디아 주가 5~15% 급등, 국내 반도체/AI 관련주 동반 상승",
+        "category": "인사/거취",
+        "description": "이재용 삼성전자 회장 관련 사법 일정 및 주요 경영 행보",
+        "impact_reason": "삼성전자 총수 리스크 발생 시 삼성전자 및 계열사 주가 변동",
         "source": "qualitative_knowledge_base",
-        "flexible_date": True,  # 정확한 날짜는 매년 다름
+        "flexible_date": True,
     },
     {
-        "date": None, "month": 5, "day": None,  # 5월 중
-        "title": "젠슨 황 대만 컴퓨텍스(Computex) 기조연설",
+        "date": None, "month": 3, "day": None,
+        "title": "삼성전자 정기 주주총회 (이재용 회장 복귀/경영 구상)",
         "type": "qualitative",
-        "category": "인사/방문",
+        "category": "인사/거취",
+        "description": "삼성전자 정기 주총. 주요 안건, 배당, 이사 선임, 자사주 정책 발표.",
+        "impact_reason": "삼성전자 배당 정책, 자사주 매입/소각 발표 시 주가 영향. M&A 언급 시 관련주 급등",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 1, "day": None,
+        "title": "국내 주요 그룹 신년사/경영전략 발표 (삼성/SK/현대차/LG)",
+        "type": "qualitative",
+        "category": "인사/거취",
+        "description": "주요 대기업 총수의 신년사 및 그룹 경영전략 발표",
+        "impact_reason": "대규모 투자 계획 발표 시 해당 업종 및 협력사 주가 영향",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 5, "day": None,
+        "title": "젠슨 황 대만 컴퓨텍스(Computex) 기조연설 (국내 HBM/반도체 영향)",
+        "type": "qualitative",
+        "category": "인사/거취",
         "description": "컴퓨텍스 타이베이에서 젠슨 황 CEO 기조연설. AI/데이터센터 관련 발표.",
         "impact_reason": "AI 반도체 수요 전망 발표 시 국내 HBM/반도체주 영향",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
     {
-        "date": None, "month": 1, "day": None,  # 1월 초 (CES)
-        "title": "CES 2026 개최 (라스베가스, 젠슨 황 기조연설)",
+        "date": None, "month": 3, "day": None,
+        "title": "젠슨 황 GTC 키노트 (엔비디아 GTC 컨퍼런스)",
         "type": "qualitative",
-        "category": "컨퍼런스",
-        "description": "CES 2026에서 엔비디아/삼성/LG 등 주요 기업 신제품 발표",
-        "impact_reason": "CES 기간 중 국내 전자/반도체/IT주 변동성 확대",
-        "source": "qualitative_knowledge_base",
-        "flexible_date": True,
-    },
-    {
-        "date": None, "month": 2, "day": None,
-        "title": "젠슨 황 한국 방문 (예상)",
-        "type": "qualitative",
-        "category": "인사/방문",
-        "description": "젠슨 황 CEO의 한국 방문 시 삼성전자/하이닉스 HBM 협력 논의",
-        "impact_reason": "2024년 방한 시 HBM 관련주 급등, 삼성전자/하이닉스 주가 영향",
+        "category": "인사/거취",
+        "description": "엔비디아 GTC에서 젠슨 황 CEO 기조연설. 신제품/로드맵 발표.",
+        "impact_reason": "차세대 GPU/반도체 발표 시 국내 반도체/AI 관련주 동반 상승",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
     {
         "date": None, "month": 6, "day": None,
-        "title": "연준 파월 의장 반기 통화정책 보고 (의회 증언)",
+        "title": "한국은행 총재 기자간담회/경제전망 발표",
         "type": "qualitative",
-        "category": "통화정책",
-        "description": "파월 연준 의장의 상/하원 통화정책 반기 보고. 금리 전망 시사.",
-        "impact_reason": "매년 2월/6월 의회 증언에서 금리 방향성 시사 시 전 세계 증시 출렁",
+        "category": "인사/거취",
+        "description": "한은 총재의 경제전망 및 통화정책 관련 기자간담회",
+        "impact_reason": "한은 총재 발언에 따라 금리 인하/인상 기대감으로 금융주 변동",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
     {
-        "date": None, "month": 2, "day": None,
-        "title": "연준 파월 의장 반기 통화정책 보고 (의회 증언)",
+        "date": None, "month": 8, "day": None,
+        "title": "잭슨홀 미팅 (Jackson Hole Symposium) - 파월 의장 기조연설",
         "type": "qualitative",
         "category": "통화정책",
-        "description": "파월 연준 의장의 상/하원 통화정책 반기 보고",
-        "impact_reason": "매년 2월/6월 의회 증언에서 금리 방향성 시사 시 전 세계 증시 출렁",
+        "description": "캔자스시티 연은 주최 잭슨홀 경제 심포지엄. 파월 의장 기조연설.",
+        "impact_reason": "2022년 잭슨홀에서 파월 매파 발언 후 코스피 3% 폭락. 매년 시장 방향성 결정",
         "source": "qualitative_knowledge_base",
-        "flexible_date": True,
     },
+
     # ============================================================
-    # 2. 정부 정책 발표
+    # 2. 정부 정책 발표 / 투자 일정
     # ============================================================
     {
         "date": None, "month": 7, "day": None,
-        "title": "한국 반도체 특별법/지원책 발표 (예상)",
+        "title": "하반기 경제정책방향 발표 (기획재정부)",
         "type": "qualitative",
         "category": "정부정책",
-        "description": "K-반도체 클러스터, 세제 지원, R&D 투자 등 반도체 산업 육성 정책",
-        "impact_reason": "2023년 반도체 지원책 발표 시 삼성전자/하이닉스 등 반도체주 급등",
+        "description": "기재부 하반기 경제정책방향. 성장률 전망, 세제 개편, 규제 완화 등.",
+        "impact_reason": "법인세 감면, 규제 완화 발표 시 관련 업종 주가 급등. 부동산 정책 시 건설주 영향",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 3, "day": None,
+        "title": "K-반도체 전략/지원책 발표 (정부/산업부)",
+        "type": "qualitative",
+        "category": "정부정책",
+        "description": "반도체 클러스터 투자, 세제 지원, R&D 예산 등 반도체 산업 육성 정책",
+        "impact_reason": "반도체 지원책 발표 시 삼성전자/하이닉스/소부장주 급등",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 4, "day": None,
+        "title": "2차전지/배터리 산업 육성 전략 발표 (산업부)",
+        "type": "qualitative",
+        "category": "정부정책",
+        "description": "배터리 R&D 지원, 광물 확보, IRA 대응 전략 등",
+        "impact_reason": "배터리 지원 정책 발표 시 LG엔솔/SK온/삼성SDI 및 소재주 동반 상승",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 6, "day": None,
+        "title": "바이오헬스 신산업 규제혁신 방안 발표",
+        "type": "qualitative",
+        "category": "정부정책",
+        "description": "바이오/제약 규제 완화, 임상 지원, 인허가 패스트트랙 등",
+        "impact_reason": "바이오 규제 완화 시 바이오/제약주 전반 상승. CMO/CDMO 기업 수혜",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
     {
         "date": None, "month": 9, "day": None,
-        "title": "한국 정부 비상경제회의/경제정책 방향 발표",
+        "title": "정부 예산안 국회 제출 (R&D/국방/SOC 예산 증감)",
         "type": "qualitative",
-        "category": "정부정책",
-        "description": "기획재정부 주관 경제정책 방향, 수출/내수 활성화 대책",
-        "impact_reason": "정책 발표 시 관련 업종(반도체, 배터리, 자동차) 주가 영향",
+        "category": "정부투자",
+        "description": "차년도 정부 예산안 국회 제출. 부처별 R&D 예산, SOC 예산, 방산 예산 증감.",
+        "impact_reason": "방산/SOC 예산 증액 시 방산주, 건설주 상승. R&D 삭감 시 과학기술주 하락",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
+    {
+        "date": None, "month": 12, "day": None,
+        "title": "국회 예산안 심사/확정 (예산결산특별위원회)",
+        "type": "qualitative",
+        "category": "정부투자",
+        "description": "국회 예결위 심사 및 본회의 예산안 확정",
+        "impact_reason": "최종 예산 확정 시 수혜 업종 주가 변동",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+
     # ============================================================
-    # 3. 국제 관계/정치
+    # 3. 국제 관계 / 통상
     # ============================================================
     {
         "date": None, "month": 4, "day": None,
-        "title": "한미 정상회담 (예상)",
+        "title": "한미 정상회담/경제협력 회의 (방산/원전/반도체)",
         "type": "qualitative",
         "category": "국제관계",
-        "description": "한미 정상회담 시 방산/원전/반도체 협력 관련주 영향",
-        "impact_reason": "2023년 한미 정상회담 시 방산주/원전주 급등",
+        "description": "한미 정상회담 및 경제장관회의. 방산/원전 수출, 반도체 협력 논의.",
+        "impact_reason": "방산 수출 계약 체결 시 방산주 급등. 원전 수주 시 원전주 영향",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 5, "day": None,
+        "title": "한일중 정상회의/경제협력 회의",
+        "type": "qualitative",
+        "category": "국제관계",
+        "description": "한일중 3국 정상회의. 경제통상 협력, 수출규제 완화 논의.",
+        "impact_reason": "일본 수출규제 완화 시 반도체 소재주, 중국 관광 재개 시 화장품/면세점주 영향",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 10, "day": None,
+        "title": "미국 대선 관련 정책 공약 발표 (관세/IRA/반도체법)",
+        "type": "qualitative",
+        "category": "정치",
+        "description": "미국 대선 후보의 경제 공약 발표. 관세, IRA, 반도체법(CHIPS Act) 수정 가능성.",
+        "impact_reason": "관세 인상 공약 시 국내 수출주 전반 하방 압력. IRA 축소 시 배터리/전기차주 영향",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
     {
         "date": None, "month": 11, "day": None,
-        "title": "미국 중간선거/대선 관련 일정",
+        "title": "APEC 정상회의 (한미일 경제협력 강화)",
         "type": "qualitative",
-        "category": "정치",
-        "description": "미국 선거 관련 정책 불확실성, 주요 공약 발표",
-        "impact_reason": "선거 시즌 정책 불확실성으로 변동성 확대, 특정 업종(신재생, 방산) 영향",
+        "category": "국제관계",
+        "description": "APEC 정상회의. 역내 경제협력, 공급망 재편 논의.",
+        "impact_reason": "공급망 협력 발표 시 관련 산업(반도체, 배터리, 광물) 주가 영향",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
+
     # ============================================================
-    # 4. 글로벌 컨퍼런스/이벤트
+    # 4. 국내 회의/미팅/일정
     # ============================================================
     {
-        "date": None, "month": 9, "day": None,
-        "title": "애플 신제품 발표 (9월 이벤트)",
+        "date": None, "month": 4, "day": None,
+        "title": "국회 기획재정위원회/산업통상자원위원회 전체회의",
+        "type": "qualitative",
+        "category": "회의/미팅",
+        "description": "국회 상임위 전체회의. 경제/산업 주요 현안 질의.",
+        "impact_reason": "주요 현안 질의 및 정책 방향 제시 시 관련 업종 주가 변동",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 2, "day": None,
+        "title": "반도체/배터리/디스플레이 업계 CEO 간담회 (산업부 주관)",
+        "type": "qualitative",
+        "category": "회의/미팅",
+        "description": "산업통상자원부 주관 주요 산업별 CEO 간담회. 애로사항 및 지원책 논의.",
+        "impact_reason": "업계 지원책 발표 시 해당 섹터 주가 동반 상승",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 7, "day": None,
+        "title": "금융위원회/금융감독원 정례 업무보고 및 정책 발표",
+        "type": "qualitative",
+        "category": "회의/미팅",
+        "description": "금융위/금감원의 금융정책 방향, 공매도 규제, 기업 지배구조 정책 발표",
+        "impact_reason": "공매도 규제 완화/강화에 따른 증시 변동성. 기업 지배구조 개선 정책 시 지주사주 영향",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 3, "day": None,
+        "title": "공정거래위원회 대기업집단 지정/일감몰아주기 규제 발표",
+        "type": "qualitative",
+        "category": "회의/미팅",
+        "description": "공정위 대기업집단(재벌) 지정 및 내부거래 규제 발표",
+        "impact_reason": "신규 지정/규제 강화 시 해당 그룹 계열사 주가 하락 가능성",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+
+    # ============================================================
+    # 5. 글로벌 컨퍼런스 (국내 산업 직접 영향)
+    # ============================================================
+    {
+        "date": None, "month": 1, "day": None,
+        "title": "CES (라스베가스) - 삼성/LG/SK 하이닉스 참가",
         "type": "qualitative",
         "category": "컨퍼런스",
-        "description": "애플 아이폰 신제품 발표. 국내 부품주(카메라, 배터리, 디스플레이) 영향.",
+        "description": "CES에서 삼성/LG/SK 등 국내 기업 신제품/신기술 발표",
+        "impact_reason": "CES 기간 중 국내 전자/반도체/IT주 변동성 확대",
+        "source": "qualitative_knowledge_base",
+        "flexible_date": True,
+    },
+    {
+        "date": None, "month": 9, "day": None,
+        "title": "애플 신제품 발표 (9월 이벤트) - 국내 부품주 영향",
+        "type": "qualitative",
+        "category": "컨퍼런스",
+        "description": "애플 아이폰 신제품 발표. 국내 카메라/배터리/디스플레이 부품주 영향.",
         "impact_reason": "아이폰 출시 사이클에 따라 국내 부품주 실적/주가 영향",
         "source": "qualitative_knowledge_base",
         "flexible_date": True,
     },
-    {
-        "date": None, "month": 6, "day": None,
-        "title": "WWDC (애플 세계 개발자 컨퍼런스)",
-        "type": "qualitative",
-        "category": "컨퍼런스",
-        "description": "애플 WWDC에서 신규 OS, AI 전략 발표",
-        "impact_reason": "AI 전략 발표 시 국내 애플 부품주/IT주 영향",
-        "source": "qualitative_knowledge_base",
-        "flexible_date": True,
-    },
+
     # ============================================================
-    # 5. 고정 일정 (날짜 확정)
+    # 6. 고정 일정 (날짜 확정 - 국내 중심)
     # ============================================================
-    {
-        "date": "2026-06-10",
-        "title": "미국 5월 CPI 발표",
-        "type": "qualitative",
-        "category": "경제지표",
-        "description": "5월 소비자물가지수(CPI) 발표. 연준 금리 결정에 직접적 영향.",
-        "impact_reason": "CPI 발표일마다 코스피/코스닥 변동성 2~3배 확대",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-06-11",
-        "title": "ECB 통화정책회의 (금리 결정)",
-        "type": "qualitative",
-        "category": "통화정책",
-        "description": "유럽중앙은행(ECB) 금리 결정 및 통화정책 방향",
-        "impact_reason": "ECB 금리 결정 시 유로/달러 환율 변동 → 국내 증시 영향",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-06-17",
-        "title": "미국 5월 소매판매(Retail Sales) 발표",
-        "type": "qualitative",
-        "category": "경제지표",
-        "description": "5월 소매판매 데이터. 소비 경기 판단 핵심 지표.",
-        "impact_reason": "소비 둔화 신호 시 코스피 하방 압력",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-06-18",
-        "title": "미국 FOMC 금리 결정 (6월)",
-        "type": "qualitative",
-        "category": "통화정책",
-        "description": "연준 FOMC 6월 회의. 금리 결정 및 점도표, 경제 전망 업데이트.",
-        "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동. 점도표에 따른 금리 전망이 시장 방향 결정",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-06-25",
-        "title": "미국 5월 PCE 물가지수 발표",
-        "type": "qualitative",
-        "category": "경제지표",
-        "description": "연준이 선호하는 물가 지표. 근원 PCE 핵심.",
-        "impact_reason": "PCE 발표일마다 증시 변동성 확대",
-        "source": "qualitative_knowledge_base",
-    },
     {
         "date": "2026-07-01",
-        "title": "한국 6월 수출입 동향 발표",
+        "title": "한국 6월 수출입 동향 발표 (산업통상자원부)",
         "type": "qualitative",
         "category": "경제지표",
-        "description": "산업통상자원부 6월 수출입 실적. 반도체/자동차 수출 핵심.",
-        "impact_reason": "수출 데이터에 따라 코스피 방향성 결정. 반도체 수출 증감률 중요",
+        "description": "6월 수출입 실적. 반도체/자동차/선박 수출 핵심 지표.",
+        "impact_reason": "수출 데이터에 따라 코스피 방향성 결정. 반도체 수출 증감률 특히 중요",
         "source": "qualitative_knowledge_base",
     },
     {
@@ -231,53 +303,8 @@ QUALITATIVE_EVENTS_DB = [
         "title": "한국은행 금융통화위원회 (기준금리 결정)",
         "type": "qualitative",
         "category": "통화정책",
-        "description": "한은 금통위 금리 결정. 한국 경제 전망 업데이트.",
-        "impact_reason": "금리 결정 및 한은 총재 발언에 따라 코스피/코스닥 영향",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-07-29",
-        "title": "미국 FOMC 금리 결정 (7월)",
-        "type": "qualitative",
-        "category": "통화정책",
-        "description": "연준 FOMC 7월 회의. 금리 결정 및 성명서.",
-        "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-08-27",
-        "title": "잭슨홀 미팅 (Jackson Hole Symposium)",
-        "type": "qualitative",
-        "category": "컨퍼런스",
-        "description": "캔자스시티 연은 주최 잭슨홀 경제 심포지엄. 파월 의장 기조연설.",
-        "impact_reason": "2022년 잭슨홀에서 파월 매파 발언 후 코스피 3% 폭락. 매년 시장 방향성 결정",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-09-17",
-        "title": "미국 FOMC 금리 결정 (9월)",
-        "type": "qualitative",
-        "category": "통화정책",
-        "description": "연준 FOMC 9월 회의. 금리 결정 및 점도표 업데이트.",
-        "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-11-05",
-        "title": "미국 FOMC 금리 결정 (11월)",
-        "type": "qualitative",
-        "category": "통화정책",
-        "description": "연준 FOMC 11월 회의. 금리 결정.",
-        "impact_reason": "FOMC 발표일마다 코스피 1~3% 변동",
-        "source": "qualitative_knowledge_base",
-    },
-    {
-        "date": "2026-12-17",
-        "title": "미국 FOMC 금리 결정 (12월)",
-        "type": "qualitative",
-        "category": "통화정책",
-        "description": "연준 FOMC 12월 회의. 금리 결정 및 점도표, 경제 전망 업데이트.",
-        "impact_reason": "연말 FOMC는 다음해 금리 전망 제시로 시장 큰 영향",
+        "description": "한은 금통위 7월 회의. 기준금리 결정 및 경제 전망.",
+        "impact_reason": "금리 결정 및 한은 총재 발언에 따라 코스피/코스닥 방향 결정",
         "source": "qualitative_knowledge_base",
     },
 ]
@@ -287,12 +314,16 @@ QUALITATIVE_EVENTS_DB = [
 # ============================================================
 CATEGORY_COLORS = {
     "인사/방문": "#e67e22",      # 주황
+    "인사/거취": "#e67e22",      # 주황 (통합)
     "통화정책": "#c0392b",       # 진빨강
     "정부정책": "#8e44ad",       # 보라
+    "정부투자": "#8e44ad",       # 보라 (통합)
     "국제관계": "#2c3e50",       # 진남색
     "정치": "#7f8c8d",           # 회색
     "컨퍼런스": "#16a085",       # 청록
     "경제지표": "#2980b9",       # 파랑
+    "회의/미팅": "#d35400",      # 진주황
+    "파생상품": "#2c3e50",       # 진남색
 }
 
 # ============================================================

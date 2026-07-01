@@ -28,60 +28,67 @@ except ImportError:
 INVESTING_URL = "https://www.investing.com/economic-calendar/"
 INVESTING_FILTER_URL = "https://www.investing.com/economic-calendar/FilterAjaxLoad"
 
-# 중요도가 높은 주요 통화 목록
-MAJOR_CURRENCIES = {"USD", "EUR", "GBP", "JPY", "CNY", "AUD", "CAD", "CHF"}
+# 중요도가 높은 주요 통화 목록 (KR 최우선, 국내 시장 직접 영향 통화만)
+MAJOR_CURRENCIES = {"KR", "USD", "CNY", "JPY", "EUR"}
 
 # ============================================================
-# 중요도 3(🔴) - 무조건 포함해야 할 핵심 지표
+# 중요도 3(🔴) - 무조건 포함해야 할 핵심 지표 (한국 + 글로벌)
 # ============================================================
 CORE_INDICATORS = [
+    # ----- 한국 직접 영향 지표 (최우선) -----
+    "BOK", "Bank of Korea", "Monetary Policy Board",
+    "Export", "Import", "Trade Balance",
+    "Industrial Production", "Manufacturing",
+    "Consumer Confidence", "Business Survey",
+    "GDP", "Current Account",
+    # ----- 한국 수출/산업 영향 지표 -----
+    "Semiconductor", "Chip", "Memory", "HBM",
+    "Battery", "EV", "Electric Vehicle",
+    "Shipbuilding", "Petrochemical",
+    "Steel", "Automobile", "Display",
+    # ----- 글로벌 핵심 지표 (국내 증시 영향 큰 것만) -----
     "Nonfarm Payrolls", "Unemployment Rate", "CPI", "Core CPI",
     "PCE", "Core PCE", "GDP", "Interest Rate Decision",
-    "FOMC", "Fed", "Federal Funds", "Average Hourly Earnings",
-    "ISM Manufacturing", "ISM Services", "ISM Non-Manufacturing",
-    "Retail Sales", "Industrial Production", "Consumer Confidence",
-    "Michigan Consumer Sentiment", "Existing Home Sales",
-    "New Home Sales", "Durable Goods Orders", "Factory Orders",
-    "Jobless Claims", "Initial Jobless Claims", "Continuing Claims",
-    "Trade Balance", "Current Account", "Treasury",
-    "Powell", "Lagarde", "Bailey", "Kuroda", "Ueda",
-    "BOJ", "BOE", "ECB", "PBOC", "FOMC Minutes",
-    "Employment Cost Index", "Productivity", "Labor Costs",
-    "Building Permits", "Housing Starts", "Philadelphia Fed",
-    "Empire State Manufacturing", "NAHB Housing Market",
-    "Wholesale Inventories", "Business Inventories",
-    "Import Prices", "Export Prices", "PPI", "Core PPI",
-    "Consumer Credit", "Personal Income", "Personal Spending",
-    "GDP Price Index", "Core Retail Sales",
+    "FOMC", "Fed", "Federal Funds",
+    "ISM Manufacturing", "ISM Services",
+    "Retail Sales",
+    "Powell", "Ueda",
+    "BOJ", "PBOC", "FOMC Minutes",
+    "PPI", "Core PPI",
 ]
 
 # ============================================================
-# 중요도 2(🟡) - 지수에 영향이 큰 것만 선별 포함
+# 중요도 2(🟡) - 국내 시장에 간접 영향 주는 지표
 # ============================================================
 SECONDARY_INDICATORS = [
-    "GDP", "CPI", "Core CPI",
-    "Retail Sales", "Industrial Production",
-    "Consumer Confidence", "Michigan",
-    "ISM", "PMI",
-    "Existing Home Sales", "New Home Sales",
+    # ----- 한국 관련 -----
+    "Export", "Import", "Trade",
+    "Industrial Production", "Manufacturing",
+    "Consumer Confidence", "Business Survey",
+    "Current Account", "Foreign Reserves",
+    "Construction", "Housing",
+    "Inflation", "Producer Price",
+    "Employment", "Unemployment",
+    "GDP",
+    # ----- 한국 수출 영향 -----
+    "Chip", "Semiconductor", "DRAM", "NAND",
+    "Battery", "EV",
+    "Ship", "Container",
+    "Oil", "Petrochemical",
+    "Steel", "Iron",
+    # ----- 글로벌 (국내 증시 영향 큰 것만) -----
+    "CPI", "Core CPI",
+    "Retail Sales",
+    "PMI", "ISM",
     "Durable Goods", "Factory Orders",
     "Jobless Claims",
-    "Trade Balance",
-    "Powell", "Lagarde", "Bailey", "Kuroda", "Ueda",
+    "Powell", "Ueda",
     "FOMC", "Fed",
-    "BOJ", "BOE", "ECB", "PBOC",
+    "BOJ", "PBOC",
     "Interest Rate",
-    "Inflation",
-    "Employment",
-    "Manufacturing",
     "Services",
-    "Housing",
     "Treasury",
-    "Budget",
-    "Current Account",
-    "Import", "Export",
     "Personal Income", "Personal Spending",
-    "Consumer Credit",
 ]
 
 # ============================================================
@@ -149,7 +156,7 @@ def fetch_investing_calendar(
     date_to = (today + timedelta(days=days_forward)).strftime("%Y-%m-%d")
 
     payload = {
-        "country[]": ["5", "32", "37", "72"],  # US, CN, JP, KR
+        "country[]": ["72", "5", "32", "37"],  # KR, US, CN, JP (한국 최우선)
         "importance[]": ["2", "3"],
         "dateFrom": date_from,
         "dateTo": date_to,
@@ -235,7 +242,7 @@ def _fetch_investing_with_requests(days_back, days_forward, min_importance):
             "Origin": "https://www.investing.com",
         }
         payload = {
-            "country[]": ["5", "32", "37", "72"],
+            "country[]": ["72", "5", "32", "37"],  # KR, US, CN, JP (한국 최우선)
             "importance[]": ["2", "3"],
             "dateFrom": date_from,
             "dateTo": date_to,

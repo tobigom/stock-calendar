@@ -1,137 +1,137 @@
 [
   {
-    "date": "2026-06-30",
-    "title": "🔴 [CNY] Manufacturing PMI",
-    "type": "macro",
-    "currency": "CNY",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-30",
-    "title": "🟡 [CNY] Chinese Composite PMI",
+    "date": "2026-07-01",
+    "title": "🟡 [CNY] RatingDog Manufacturing PMI",
     "type": "macro",
     "currency": "CNY",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [CNY] Non-Manufacturing PMI",
-    "type": "macro",
-    "currency": "CNY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-30",
-    "title": "🔴 [GBP] GDP",
-    "type": "macro",
-    "currency": "GBP",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-30",
-    "title": "🔴 [GBP] GDP",
-    "type": "macro",
-    "currency": "GBP",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-30",
-    "title": "🟡 [EUR] German Retail Sales",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] HCOB Spain Manufacturing PMI",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [GBP] Current Account",
-    "type": "macro",
-    "currency": "GBP",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-30",
-    "title": "🟡 [EUR] French CPI",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] HCOB Italy Manufacturing PMI",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [EUR] German Unemployment Rate",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] HCOB France Manufacturing PMI",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [EUR] German Unemployment Change",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] HCOB Germany Manufacturing PMI",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🔴 [EUR] German CPI",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] HCOB Eurozone Manufacturing PMI",
+    "type": "macro",
+    "currency": "EUR",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "🔴 [EUR] CPI",
     "type": "macro",
     "currency": "EUR",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [EUR] German CPI",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] Core CPI",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [CAD] GDP",
+    "date": "2026-07-01",
+    "title": "🟡 [EUR] CPI",
     "type": "macro",
-    "currency": "CAD",
+    "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [CAD] GDP",
-    "type": "macro",
-    "currency": "CAD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-06-30",
-    "title": "🔴 [USD] Chicago PMI",
+    "date": "2026-07-01",
+    "title": "🔴 [USD] ADP Nonfarm Employment Change",
     "type": "macro",
     "currency": "USD",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🔴 [USD] CB Consumer Confidence",
+    "date": "2026-07-01",
+    "title": "🔴 [USD] S&P Global Manufacturing PMI",
     "type": "macro",
     "currency": "USD",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-06-30",
-    "title": "🟡 [JPY] Tankan Big Manufacturing Outlook Index",
+    "date": "2026-07-01",
+    "title": "🔴 [USD] ISM Manufacturing PMI",
     "type": "macro",
-    "currency": "JPY",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "🔴 [USD] ISM Manufacturing Prices",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "🟡 [USD] ISM Manufacturing Employment",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "🟡 [USD] Construction Spending",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "🔴 [USD] Crude Oil Inventories",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-01",
+    "title": "🟡 [USD] Cushing Crude Oil Inventories",
+    "type": "macro",
+    "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   }
