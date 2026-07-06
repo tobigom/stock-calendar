@@ -1,63 +1,47 @@
 [
   {
-    "date": "2026-07-02",
-    "title": "🟡 [EUR] Spanish Unemployment Change",
+    "date": "2026-07-06",
+    "title": "🟡 [EUR] German Factory Orders",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-02",
-    "title": "🟡 [EUR] Unemployment Rate",
-    "type": "macro",
-    "currency": "EUR",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-02",
-    "title": "🔴 [USD] Nonfarm Payrolls",
+    "date": "2026-07-06",
+    "title": "🔴 [USD] S&P Global Services PMI",
     "type": "macro",
     "currency": "USD",
     "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-02",
-    "title": "🔴 [USD] Unemployment Rate",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-02",
-    "title": "🔴 [USD] Initial Jobless Claims",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-02",
-    "title": "🟡 [USD] Continuing Jobless Claims",
+    "date": "2026-07-06",
+    "title": "🟡 [USD] S&P Global Composite PMI",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-02",
-    "title": "🟡 [USD] Factory Orders",
+    "date": "2026-07-06",
+    "title": "🔴 [USD] ISM Non-Manufacturing Prices",
     "type": "macro",
     "currency": "USD",
-    "importance": 2,
+    "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-02",
-    "title": "🟡 [USD] Fed's Balance Sheet",
+    "date": "2026-07-06",
+    "title": "🔴 [USD] ISM Non-Manufacturing PMI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-06",
+    "title": "🟡 [USD] ISM Non-Manufacturing Employment",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
