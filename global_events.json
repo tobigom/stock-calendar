@@ -1,49 +1,65 @@
 [
   {
-    "date": "2026-07-06",
-    "title": "🟡 [EUR] German Factory Orders",
+    "date": "2026-07-07",
+    "title": "🟡 [EUR] German Industrial Production",
     "type": "macro",
     "currency": "EUR",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-06",
-    "title": "🔴 [USD] S&P Global Services PMI",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 3,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-06",
-    "title": "🟡 [USD] S&P Global Composite PMI",
+    "date": "2026-07-07",
+    "title": "🟡 [USD] ADP Employment Change Weekly",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-06",
-    "title": "🔴 [USD] ISM Non-Manufacturing Prices",
+    "date": "2026-07-07",
+    "title": "🟡 [USD] ADP Employment Change Weekly",
     "type": "macro",
     "currency": "USD",
-    "importance": 3,
+    "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-06",
-    "title": "🔴 [USD] ISM Non-Manufacturing PMI",
+    "date": "2026-07-07",
+    "title": "🟡 [USD] Trade Balance",
     "type": "macro",
     "currency": "USD",
-    "importance": 3,
+    "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-06",
-    "title": "🟡 [USD] ISM Non-Manufacturing Employment",
+    "date": "2026-07-07",
+    "title": "🟡 [USD] Exports",
     "type": "macro",
     "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-07",
+    "title": "🟡 [USD] Imports",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-07",
+    "title": "🟡 [JPY] Adjusted Current Account",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-07",
+    "title": "🟡 [JPY] Current Account n.s.a.",
+    "type": "macro",
+    "currency": "JPY",
     "importance": 2,
     "source": "investing.com"
   }
