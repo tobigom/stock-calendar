@@ -1,66 +1,26 @@
 [
   {
-    "date": "2026-07-07",
-    "title": "🟡 [EUR] German Industrial Production",
+    "date": "2026-07-08",
+    "title": "🔴 [USD] Crude Oil Inventories",
     "type": "macro",
-    "currency": "EUR",
-    "importance": 2,
+    "currency": "USD",
+    "importance": 3,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-07",
-    "title": "🟡 [USD] ADP Employment Change Weekly",
+    "date": "2026-07-08",
+    "title": "🟡 [USD] Cushing Crude Oil Inventories",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
     "source": "investing.com"
   },
   {
-    "date": "2026-07-07",
-    "title": "🟡 [USD] ADP Employment Change Weekly",
+    "date": "2026-07-08",
+    "title": "🔴 [USD] FOMC Meeting Minutes",
     "type": "macro",
     "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-07",
-    "title": "🟡 [USD] Trade Balance",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-07",
-    "title": "🟡 [USD] Exports",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-07",
-    "title": "🟡 [USD] Imports",
-    "type": "macro",
-    "currency": "USD",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-07",
-    "title": "🟡 [JPY] Adjusted Current Account",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
-    "source": "investing.com"
-  },
-  {
-    "date": "2026-07-07",
-    "title": "🟡 [JPY] Current Account n.s.a.",
-    "type": "macro",
-    "currency": "JPY",
-    "importance": 2,
+    "importance": 3,
     "source": "investing.com"
   }
 ]

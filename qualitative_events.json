@@ -1,35 +1,5 @@
 [
   {
-    "date": "2026-07-01",
-    "title": "하반기 경제정책방향 발표 (기획재정부) (예상)",
-    "type": "qualitative",
-    "category": "정부정책",
-    "color": "#8e44ad",
-    "description": "기재부 하반기 경제정책방향. 성장률 전망, 세제 개편, 규제 완화 등.",
-    "impact_reason": "법인세 감면, 규제 완화 발표 시 관련 업종 주가 급등. 부동산 정책 시 건설주 영향",
-    "source": "qualitative_knowledge_base"
-  },
-  {
-    "date": "2026-07-01",
-    "title": "금융위원회/금융감독원 정례 업무보고 및 정책 발표 (예상)",
-    "type": "qualitative",
-    "category": "회의/미팅",
-    "color": "#d35400",
-    "description": "금융위/금감원의 금융정책 방향, 공매도 규제, 기업 지배구조 정책 발표",
-    "impact_reason": "공매도 규제 완화/강화에 따른 증시 변동성. 기업 지배구조 개선 정책 시 지주사주 영향",
-    "source": "qualitative_knowledge_base"
-  },
-  {
-    "date": "2026-07-01",
-    "title": "한국 6월 수출입 동향 발표 (산업통상자원부)",
-    "type": "qualitative",
-    "category": "경제지표",
-    "color": "#2980b9",
-    "description": "6월 수출입 실적. 반도체/자동차/선박 수출 핵심 지표.",
-    "impact_reason": "수출 데이터에 따라 코스피 방향성 결정. 반도체 수출 증감률 특히 중요",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-07-15",
     "title": "한국은행 금융통화위원회 (기준금리 결정)",
     "type": "qualitative",
