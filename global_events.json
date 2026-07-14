@@ -1,7 +1,71 @@
 [
   {
-    "date": "2026-07-13",
-    "title": "🟡 [USD] Federal Budget Balance",
+    "date": "2026-07-14",
+    "title": "🟡 [CNY] Trade Balance (USD)",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🟡 [CNY] Imports",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🟡 [CNY] Exports",
+    "type": "macro",
+    "currency": "CNY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🟡 [JPY] Industrial Production",
+    "type": "macro",
+    "currency": "JPY",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🟡 [USD] ADP Employment Change Weekly",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 2,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🔴 [USD] CPI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🔴 [USD] Core CPI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🔴 [USD] CPI",
+    "type": "macro",
+    "currency": "USD",
+    "importance": 3,
+    "source": "investing.com"
+  },
+  {
+    "date": "2026-07-14",
+    "title": "🟡 [USD] Core CPI",
     "type": "macro",
     "currency": "USD",
     "importance": 2,
