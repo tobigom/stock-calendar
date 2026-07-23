@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-07-15",
-    "title": "한국은행 금융통화위원회 (기준금리 결정)",
-    "type": "qualitative",
-    "category": "통화정책",
-    "color": "#c0392b",
-    "description": "한은 금통위 7월 회의. 기준금리 결정 및 경제 전망.",
-    "impact_reason": "금리 결정 및 한은 총재 발언에 따라 코스피/코스닥 방향 결정",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-09-01",
     "title": "정부 예산안 국회 제출 (R&D/국방/SOC 예산 증감) (예상)",
     "type": "qualitative",
