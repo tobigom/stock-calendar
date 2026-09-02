@@ -48,5 +48,15 @@
     "description": "APEC 정상회의. 역내 경제협력, 공급망 재편 논의.",
     "impact_reason": "공급망 협력 발표 시 관련 산업(반도체, 배터리, 광물) 주가 영향",
     "source": "qualitative_knowledge_base"
+  },
+  {
+    "date": "2026-12-01",
+    "title": "국회 예산안 심사/확정 (예산결산특별위원회) (예상)",
+    "type": "qualitative",
+    "category": "정부투자",
+    "color": "#8e44ad",
+    "description": "국회 예결위 심사 및 본회의 예산안 확정",
+    "impact_reason": "최종 예산 확정 시 수혜 업종 주가 변동",
+    "source": "qualitative_knowledge_base"
   }
 ]
