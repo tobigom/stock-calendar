@@ -1,25 +1,5 @@
 [
   {
-    "date": "2026-09-01",
-    "title": "정부 예산안 국회 제출 (R&D/국방/SOC 예산 증감) (예상)",
-    "type": "qualitative",
-    "category": "정부투자",
-    "color": "#8e44ad",
-    "description": "차년도 정부 예산안 국회 제출. 부처별 R&D 예산, SOC 예산, 방산 예산 증감.",
-    "impact_reason": "방산/SOC 예산 증액 시 방산주, 건설주 상승. R&D 삭감 시 과학기술주 하락",
-    "source": "qualitative_knowledge_base"
-  },
-  {
-    "date": "2026-09-01",
-    "title": "애플 신제품 발표 (9월 이벤트) - 국내 부품주 영향 (예상)",
-    "type": "qualitative",
-    "category": "컨퍼런스",
-    "color": "#16a085",
-    "description": "애플 아이폰 신제품 발표. 국내 카메라/배터리/디스플레이 부품주 영향.",
-    "impact_reason": "아이폰 출시 사이클에 따라 국내 부품주 실적/주가 영향",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-09-10",
     "title": "📊 선물옵션 동시만기일 (9월)",
     "type": "futures_options",
