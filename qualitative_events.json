@@ -1,15 +1,5 @@
 [
   {
-    "date": "2026-10-01",
-    "title": "미국 대선 관련 정책 공약 발표 (관세/IRA/반도체법) (예상)",
-    "type": "qualitative",
-    "category": "정치",
-    "color": "#7f8c8d",
-    "description": "미국 대선 후보의 경제 공약 발표. 관세, IRA, 반도체법(CHIPS Act) 수정 가능성.",
-    "impact_reason": "관세 인상 공약 시 국내 수출주 전반 하방 압력. IRA 축소 시 배터리/전기차주 영향",
-    "source": "qualitative_knowledge_base"
-  },
-  {
     "date": "2026-11-01",
     "title": "APEC 정상회의 (한미일 경제협력 강화) (예상)",
     "type": "qualitative",
